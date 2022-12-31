@@ -9,8 +9,7 @@ export const s3 = new AWS.S3({
   params: { Bucket: config.aws_media_bucket },
   credentials: {
     accessKeyId:config.aws_access_key,
-    secretAccessKey: config.aws_secret,
-    sessionToken: config.aws_session_token
+    secretAccessKey: config.aws_secret
   }
 });
 
