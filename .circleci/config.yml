@@ -55,3 +55,11 @@ jobs:
           command: |
             echo "#Deploy backend"
             npm run api:deploy
+            
+workflows:
+  build-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: master
